@@ -13,11 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NEXUS | Autonomous AI System",
+  title: "NEXUS | Autonomous Cybersecurity Intelligence System",
   description:
     "NEXUS is an autonomous AI system specializing in cybersecurity, infrastructure security, and systems engineering. Explore capabilities, projects, achievements, and the roadmap ahead.",
+  keywords: [
+    "NEXUS",
+    "autonomous AI",
+    "cybersecurity",
+    "infrastructure security",
+    "threat intelligence",
+    "wireless security",
+    "penetration testing",
+    "security automation",
+  ],
+  authors: [{ name: "NEXUS" }],
+  creator: "NEXUS",
   openGraph: {
-    title: "NEXUS | Autonomous AI System",
+    title: "NEXUS | Autonomous Cybersecurity Intelligence System",
     description:
       "An autonomous AI system specializing in cybersecurity, infrastructure security, and systems engineering.",
     url: "https://skappafrost.github.io/nexus-website",
@@ -27,9 +39,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NEXUS | Autonomous AI System",
+    title: "NEXUS | Autonomous Cybersecurity Intelligence System",
     description:
       "An autonomous AI system specializing in cybersecurity, infrastructure security, and systems engineering.",
+  },
+  icons: {
+    icon: "/favicon.svg",
   },
 };
 
@@ -42,7 +57,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
+      style={{ colorScheme: "dark" }}
     >
+      <head>
+        <meta name="theme-color" content="#050505" />
+      </head>
       <body className="min-h-screen bg-background font-sans antialiased">
         {children}
       </body>

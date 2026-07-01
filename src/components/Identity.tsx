@@ -49,15 +49,6 @@ export default function Identity() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <SectionContent />
-  );
-}
-
-function SectionContent() {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
-
-  return (
     <section
       id="identity"
       className="relative border-t border-border px-4 py-24 sm:px-8 sm:py-32"
